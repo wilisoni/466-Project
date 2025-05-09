@@ -1,0 +1,23 @@
+  In this project, we were provided with a new dataset titled 'Multi-mode Fault Diagnosis Datasets of Gearbox Under Variable Working Conditions', which is crucial for our gearbox fault detection analysis. 
+  The dataset captures various operational parameters and sensor readings over time, which will help us investigate the performance of a gearbox under specific stress conditions.
+
+  The dataset consists of the following key columns:
+speed: The rotational speed of the gearbox shaft, likely measured in RPM.
+torque: The torque applied to the gearbox, measured in Nm.
+motor_vibration_x, motor_vibration_y, motor_vibration_z: Vibration signals recorded from the motor along the X, Y, and Z axes.
+gearbox_vibration_x, gearbox_vibration_y, gearbox_vibration_z: Vibration signals recorded from the gearbox along the X, Y, and Z axes.
+
+🚧 Data Loading Issues
+  When initially attempting to load the dataset into memory, we encountered some issues due to its size and the limitations of our computational environment. 
+  The dataset was too large to load all at once, which caused memory allocation errors.
+
+💡 Solution: Loading Data in Batches
+To work around these memory limitations, we implemented a solution that involved loading the data in smaller, manageable batches. This approach allowed us to:
+  Efficiently process the data without overwhelming the system’s memory capacity.
+  Handle missing values and outliers incrementally, ensuring that each batch was properly cleaned before further analysis.
+
+🔜 Next Steps
+With the data successfully loaded and cleaned, the next phase of the project will involve:
+
+Exploratory Data Analysis (EDA) to understand the underlying patterns in the data.
+Feature engineering to identify the most relevant variables for predicting gearbox faults.
